@@ -6,14 +6,14 @@ namespace AreTheyTheSame.App
     public class CaluclateIfTheSquareOfOneArrayIsEqualToTheOtherArray : ICaluclateIfTheSquareOfOneArrayIsEqualToTheOtherArray
     {
         public bool comp(int[] a, int[] b)
-        {
-            var listA = a.ToList();
+        {            
             if(a == null || b == null)
             {
                 return false;
             }
             else
             {
+                var listA = a.ToList();
                 if (a.Length == b.Length)
                 {
                     foreach (var numberB in b)
